@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script>
+    window.$docsify = {
+        name: '',
+        repo: '',
+        auto2top: true,
+        coverpage: true,
+        executeScript: true,
+        loadSidebar: true,
+        loadNavbar: true,
+        mergeNavbar: true,
+        maxLevel: 4,
+        subMaxLevel: 2,
+        name: '我的个人文档'
+    }
+    window.sidebar = [
+        { slug: '/', title: 'Home' },
+        {
+            slug: '/pageA',
+            title: 'page A',
+            children: [
+                { slug: '/pageA/childrenB', title: 'children B' }
+            ]
+        },
+        { slug: '/PageC', title: 'Page C' }
+    ]
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+</html>
