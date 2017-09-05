@@ -1,12 +1,16 @@
 - [Home](/)
-- [Guide](guide.md)
 - JavaScript
-    - [结构赋值](/JavaScript/结构赋值.md)
-    - [Array](/JavaScript/Array.md)
     - [基本语法](/JavaScript/基本语法.md)
+    - [JavaScript代码段](/JavaScript/JavaScript代码段.md)
+    - [Array](/JavaScript/Array.md)
+    - [console](/JavaScript/console.md)
+    - [解构赋值](/JavaScript/解构赋值.md)
+    - [Set和Map数据结构](/JavaScript/Set和Map数据结构.md)
     - [高级语法](/JavaScript/高级语法.md)
+
 - CSS
+    - [笔记](/CSS/笔记.md)
+    - [常用CSS HTML](/CSS/常用.md)
+    - [keydom移动端](/CSS/keydom.md)
     - [css禅意花园](/CSS/css禅意花园.md)
-    - [响应式布局](/CSS/响应式布局.md)
-    - [笔记](/CSS/笔记.md)
-    - [笔记](/CSS/笔记.md)
+    - [media媒体查询](/CSS/media媒体查询.md)

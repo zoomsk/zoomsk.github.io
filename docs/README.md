@@ -1,3 +1,3 @@
-# Headline
+# Notebook
 
-> An awesome project.
+> An notebook project.

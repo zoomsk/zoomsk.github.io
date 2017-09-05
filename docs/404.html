@@ -2,39 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name="description" content="Description">
+    <title>标题</title>
+    <meta name="description" content="简介，方便 SEO">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="media/logo.png">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <!--<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css">-->
+    <!--<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css">-->
+    <!--<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css">-->
 </head>
 <body>
 <div id="app"></div>
 </body>
 <script>
     window.$docsify = {
-        name: '',
-        repo: '',
-        auto2top: true,
-        coverpage: true,
-        executeScript: true,
         loadSidebar: true,
-        loadNavbar: true,
-        mergeNavbar: true,
-        maxLevel: 4,
-        subMaxLevel: 2,
-        name: '我的个人文档'
+        subMaxLevel: 3,
+        autoHeader: true,
+        name: 'My Documents',
+        auto2top: true,
+//        themeColor: '#00CD66',
+//        search: true,
+        executeScript: true,
+        search: {
+            noData: {
+                '/de-de/': 'Keine Ergebnisse!',
+                '/zh-cn/': '没有结果!',
+                '/': 'No results!'
+            },
+            paths: 'auto',
+            placeholder: {
+                '/de-de/': 'Suche',
+                '/zh-cn/': '搜索',
+                '/': 'Search'
+            }
+        }
     }
-    window.sidebar = [
-        { slug: '/', title: 'Home' },
-        {
-            slug: '/pageA',
-            title: 'page A',
-            children: [
-                { slug: '/pageA/childrenB', title: 'children B' }
-            ]
-        },
-        { slug: '/PageC', title: 'Page C' }
-    ]
 </script>
-<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script
+        src="//unpkg.com/docsify/lib/docsify.min.js"
+        data-coverpage
+        data-router>
+</script>
 </html>

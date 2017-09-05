@@ -46,39 +46,42 @@ a:link -> a:visited -> a:hover -> a:active（LoVeHAte）
 #异步加载第三方内容
 
 当你无法保证嵌入第三方内容比如 Youtube 视频或者一个 like/tweet 按钮可以正常工作的时候，你需要考虑用异步加载这些代码，避免阻塞整个页面加载。
-	(function() {
-	
+
+```js
+(function() {
+
 	    var script,
 	        scripts = document.getElementsByTagName('script')[0];
-	
+
 	    function load(url) {
 	      script = document.createElement('script');
 	      script.async = true;
 	      script.src = url;
 	      scripts.parentNode.insertBefore(script, scripts);
 	    }
-	
-	    load('//apis.google.com/js/plusone.js');
-	    load('//platform.twitter.com/widgets.js');
-	    load('//s.widgetsite.com/widget.js');
-	
+
+	    load(docsjs);
+	    load(docsjs);
+	    load(docsjs);
+
 	}());(function() {
-	
+
 	    var script,
 	        scripts = document.getElementsByTagName('script')[0];
-	
+
 	    function load(url) {
 	      script = document.createElement('script');
 	      script.async = true;
 	      script.src = url;
 	      scripts.parentNode.insertBefore(script, scripts);
 	    }
-	
-	    load('//apis.google.com/js/plusone.js');
-	    load('//platform.twitter.com/widgets.js');
-	    load('//s.widgetsite.com/widget.js');
-	
+
+	    load(docsjs);
+	    load(docsjs);
+	    load(docsjs);
+
 	}());
+```
 
 # 电话号码识别
 
